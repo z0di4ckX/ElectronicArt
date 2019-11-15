@@ -1,10 +1,8 @@
-
 <?php
 
-include 'connect.php';
+#include 'connect.php';
 
 ?>
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
