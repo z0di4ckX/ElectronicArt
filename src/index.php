@@ -85,6 +85,9 @@
                         <img class="img-thumbnail" src="<?Php echo $imagenArt; ?>" alt="<?php echo $nombre; ?>">
                     </td>
                 </div>
+                <td><?php echo $id_cat; ?></td>
+                <td><?php echo $precio; ?></td>
+                <td><a href="ver-modificar.php?"></a></td>
             </tr>
         </table>
     </div>
