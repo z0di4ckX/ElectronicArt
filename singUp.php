@@ -21,13 +21,13 @@
             <div class="collapse navbar-collapse">
                 <ul class="navbar-nav mr-auto">
                     <li class="nav-item active">
-                        <a class="nav-link" href="index.html">Home</a>
+                        <a class="nav-link" href="index.html">Portada</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="entrarArticulo.html">Entrar Articulo</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="cliente.html">Anadir Cliente</a>
+                        <a class="nav-link" href="cliente.html">Añadir Cliente</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="hacerVenta.html">Crear Venta</a>
