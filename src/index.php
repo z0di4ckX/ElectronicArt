@@ -1,3 +1,12 @@
+<!-- php connected script -->
+<?php
+    include('./include/connect.php');
+    
+    $query = "SELECT * FROM articulo";
+    
+    $result = mysqli_query($connect, $query);
+?>
+<!-- End php script-->
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -10,15 +19,6 @@
     crossorigin="anonymous">
 </head>
 <body>
-<!-- php connected script -->
-<?php
-    include('include/connect.php');
-    
-    $query = "SELECT * FROM articulo";
-    
-    $result = mysqli_query($connect, $query);
-?>
-<!-- End php script-->
 <!-- Start Navequetion -->
 <header>
     <div class="container p-0">
