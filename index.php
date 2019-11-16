@@ -9,15 +9,15 @@
     crossorigin="anonymous">
 </head>
 <body>
-<!-- php -->
+<!-- php connected script -->
 <?php
     include('include/connect.php');
     
     $query = "SELECT * FROM articulos";
     
-    $result = mysqli_query($conn, $query);
+    $result = mysqli_query($connect, $query);
 ?>
-<!-- End -->
+<!-- End php script-->
 <!-- Start Navequetion -->
 <header>
     <div class="container p-0">
@@ -80,6 +80,11 @@
                 <td><?php echo $id_art; ?></td>
                 <td><?php echo $nombre; ?></td>
                 <td><?php echo $descripcion; ?></td>
+                <div class="card articulo_card ">
+                    <td>
+                        <img class="img-thumbnail" src="<?Php echo $imagenArt; ?>" alt="<?php echo $nombre; ?>">
+                    </td>
+                </div>
             </tr>
         </table>
     </div>

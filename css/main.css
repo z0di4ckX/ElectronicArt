@@ -1,0 +1,9 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+ .articulo_card {
+    width: 18rem;
+    height: 15rem;
+ }
