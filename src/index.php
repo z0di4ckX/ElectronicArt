@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <title>Electronic Art</title>
+    <link rel="stylesheet" href="css/main.css">
     <!-- bootstrap css -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr"
@@ -13,7 +14,7 @@
 <?php
     include('include/connect.php');
     
-    $query = "SELECT * FROM articulos";
+    $query = "SELECT * FROM articulo";
     
     $result = mysqli_query($connect, $query);
 ?>
@@ -72,7 +73,7 @@
                     $precio = $row['precio'];
 
                     $id_cat = $row['id_cat'];
-                }
+                
             
             ?>
             <!-- End php script -->
@@ -87,8 +88,15 @@
                 </div>
                 <td><?php echo $id_cat; ?></td>
                 <td><?php echo $precio; ?></td>
-                <td><a href="ver-modificar.php?"></a></td>
+                <td>
+                    <a href="ver-modificar.php?GetID=<?php echo $id_art?>" class="btn btn-success">Actualizar</a>
+                </td>
+                <td>
+                    <a onclick="return confirm('Estas seguro que quieres eliminar este articulo?')" href="delete.php?GetID=<?php echo $id_art;?>" class="btn btn-danger">Eliminar</a>
+                </td>
             </tr>
+        <?php } ?>
+        <!-- End php script -->
         </table>
     </div>
     <!-- Start bootstrap script -->
