@@ -1,8 +1,8 @@
 <!-- php connected script -->
 <?php
-    include('include/connect.php');
+    include('./include/connect.php');
     
-    $query = "SELECT * FROM articulo";
+    $query = "SELECT * FROM articulos";
     
     $result = mysqli_query($conn, $query);
 ?>
@@ -39,6 +39,9 @@
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="listadoDeVenta.html">Listado de Ventas</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="singIn.php">SingIn</a>
                     </li>
                 </ul>
             </div>
