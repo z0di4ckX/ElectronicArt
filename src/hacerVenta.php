@@ -1,10 +1,10 @@
-
 <?php
-
-include 'connect.php';
-
+    include('./include/connect.php');
+    
+    $query = "SELECT * FROM venta";
+    
+    $result = mysqli_query($connect, $query);
 ?>
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -16,7 +16,7 @@ include 'connect.php';
     crossorigin="anonymous">
 </head>
 <body>
-<!-- Navequetion -->
+<!-- navigation -->
 <header>
     <div class="container p-0">
         <nav class="navbar navbar-expand-lg">

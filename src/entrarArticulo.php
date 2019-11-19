@@ -1,7 +1,9 @@
 <?php
-
-include 'connect.php';
- 
+    include('./include/connect.php');
+    
+    $query = "SELECT * FROM articulo";
+    
+    $result = mysqli_query($connect, $query);
 ?>
 
 <!DOCTYPE html>
@@ -15,7 +17,7 @@ include 'connect.php';
     crossorigin="anonymous">
 </head>
 <body>
-<!-- Start Navequetion -->
+<!-- Start navigation -->
 <header>
     <div class="container p-0">
         <nav class="navbar navbar-expand-lg">

@@ -9,7 +9,7 @@
     crossorigin="anonymous">
 </head>
 <body>
-<!-- Start Navequetion -->
+<!-- Start navigation -->
 <header>
     <div class="container p-0">
         <nav class="navbar navbar-expand-lg">

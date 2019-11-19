@@ -1,6 +1,6 @@
 <?php
 
-include('include/connect.php');
+include('./include/connect.php');
 
 $id_art = $_GET['id_art'];
 
