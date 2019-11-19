@@ -1,10 +1,10 @@
 <!-- php connected script -->
 <?php
-    include('./include/connect.php');
+    include('include/connect.php');
     
     $query = "SELECT * FROM articulo";
     
-    $result = mysqli_query($connect, $query);
+    $result = mysqli_query($conn, $query);
 ?>
 <!-- End php script-->
 <!DOCTYPE html>
@@ -73,8 +73,6 @@
                     $precio = $row['precio'];
 
                     $id_cat = $row['id_cat'];
-                
-            
             ?>
             <!-- End php script -->
             <tr>

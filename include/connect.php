@@ -6,10 +6,10 @@ $password = "";
 $dbname = "electronicart";
 
 // Create connection
-$connect = mysqli_connect($servername, $username, $password, $dbname);
+$conn = mysqli_connect($servername, $username, $password, $dbname);
 
-if(!$connect) {
-    echo $connect->connect_error();
+if(!$conn) {
+    echo $conn -> connect_error();
 }
 
 ?>
