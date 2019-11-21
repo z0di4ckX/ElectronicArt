@@ -1,6 +1,6 @@
 <!-- php connected script -->
 <?php
-    include('./include/connect.php');
+    include('../include/connect.php');
     
     $query = "SELECT * FROM articulos";
     
@@ -65,17 +65,17 @@
             <?php 
                 while($row = mysqli_fetch_assoc($result)) {
                     
-                    $id_art = $row['id_art'];
+                    $id_art = $row['idArt'];
 
-                    $nombre = $row['nombre'];
+                    $nombre = $row['NombreArt'];
 
-                    $descripcion = $row['descripcion'];
+                    $descripcion = $row['DescripcionArt'];
 
-                    $imagenArt = $row['imagenArt'];
-
-                    $precio = $row['precio'];
-
-                    $id_cat = $row['id_cat'];
+                    $imagenArt = $row['ImageArt'];
+                    
+                    $id_cat = $row['IdCat'];
+                    
+                    $precio = $row['Precio'];
             ?>
             <!-- End php script -->
             <tr>

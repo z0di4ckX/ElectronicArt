@@ -1,21 +1,21 @@
 <?php
 
-include('./include/connect.php');
+include('../include/connect.php');
 
-$id_art = $_GET['id_art'];
+$id_art = $_GET['idArt'];
 
-$nombre = $_POST['nombre'];
+$nombre = $_POST['NombreArt'];
 
-$descripcion = $_POST['descripcion'];
+$descripcion = $_POST['DescripcionArt'];
 
-$imageArt = $_POST['imageArt'];
+$imageArt = $_POST['ImageArt'];
 
-$precio = $_POST['precio'];
+$id_cat = $_POST['IdCat'];
 
-$id_cat = $_POST['id_cat'];
+$precio = $_POST['Precio'];
 
-$query = "UPDATE articulos SET nombre = '$nombre', descripcion = '$descripcion',
-imageArt = '$imageArt', id_cat = '$id_cat', precio = '$precio' WHERE id_art = '$id_art' ";
+$query = "UPDATE articulos SET NombreArt = '$nombre', DescripcionArt = '$descripcion',
+ImageArt = '$imageArt', IdCat = '$id_cat', Precio = '$precio' WHERE idArt = '$id_art' ";
 
 $result = $connect->query($query);
 
