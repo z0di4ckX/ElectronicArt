@@ -1,9 +1,9 @@
 <?php
-    include('./include/connect.php');
+    include('../include/connect.php');
     
-    $query = "SELECT * FROM articulo";
+    $query = "SELECT * FROM articulos";
     
-    $result = mysqli_query($connect, $query);
+    $result = mysqli_query($conn, $query);
 ?>
 
 <!DOCTYPE html>
