@@ -1,11 +1,10 @@
 <?php
-    include('../include/connect.php');
+    include('include/connect.php');
     
     $query = "SELECT * FROM venta";
     
     $result = mysqli_query($conn, $query);
 ?>
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -17,7 +16,7 @@
     crossorigin="anonymous">
 </head>
 <body>
-<!-- Start navigation -->
+<!-- navigation -->
 <header>
     <div class="container p-0">
         <nav class="navbar navbar-expand-lg">
@@ -43,42 +42,44 @@
         </nav>
     </div>
 </header>
-<!-- End  -->
     <h1>Electronic Art</h1>
-    <h3>Sign In</h3>
-    <!-- Start Log-in -->
-    <div class="card" style="width: 45rem;">
+    <h3>Categoria</h3>
+    <!-- Start card Categoria -->
+    <div class="card w-75">
         <div class="card-body">
-        <form>
-            <div class="form-group row">
-                <label for="inputEmail3" class="col-sm-2 col-form-label">Email</label>
-                <div class="col-sm-10">
-                <input type="email" class="form-control" id="inputEmail3" placeholder="Email">
-                </div>
-            </div>
-            <div class="form-group row">
-                <label for="inputPassword3" class="col-sm-2 col-form-label">Password</label>
-                <div class="col-sm-10">
-                <input type="password" class="form-control" id="inputPassword3" placeholder="Password">
-                </div>
-            </div>
-            <div class="form-group row">
-                <div class="col-auto">
-                    <div class="form-check mb-2">
-                        <input class="form-check-input" type="checkbox" id="autoSizingCheck">
-                        <label class="form-check-label" for="autoSizingCheck">
-                        Remember me
-                        </label>
+            <h5 class="card-title">Categoria</h5>
+            <form class="card-text">
+                <div class="form-row">
+                    <label for="exampleFormControlInput1">Cliente</label>
+                    <select class="form-control">
+                        <option>Selecionar Cliente</option>
+                    </select>
+                    <br />
+                    <label for="exampleFormControlInput1">Articulo</label>
+                    <select class="form-control">
+                        <option>Seleccionar Articulos</option><br />
+                    </select>
+                    <label for="exampleFormControlInput1">Fecha de Venta</label>
+                    <select class="form-control">
+                        <option>dd/mm/aaaa</option>
+                    </select>
+                    <div class="col-auto my-1">
+                        <br />
+                        <label class="mr-sm-2 sr-only" for="inlineFormCustomSelect">Cantidad</label>
+                        <select class="custom-select mr-sm-2" id="inlineFormCustomSelect">
+                            <option selected>Cantidad...</option>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                        </select>
                     </div>
                 </div>
-            </div>
-            <div class="form-group row">
-                <div class="col-sm-10">
-                        <a class="btn btn-success" href="#">Sign in</a>
-                        <a class="btn btn-primary" href="singUp.html">Sing up</a>
-                </div>
-            </div>
-        </form>
+            </form>
+            <br />
+            <a class="btn btn-success" href="#">Continuar</a>
+            <a class="btn btn-primary" href="index.html">Regresar</a>
         </div>
     </div>
     <!-- End -->

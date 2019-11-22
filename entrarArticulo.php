@@ -1,7 +1,7 @@
 <?php
-    include('../include/connect.php');
+    include('include/connect.php');
     
-    $query = "SELECT * FROM cliente";
+    $query = "SELECT * FROM articulos";
     
     $result = mysqli_query($conn, $query);
 ?>
@@ -45,24 +45,33 @@
 </header>
 <!-- End -->
     <h1>Electronic Art</h1>
-    <h3>Cliente</h3>
-    <!-- Start Card Cliente-->
+    <h3>Entrada de Inventario</h3>
+    <!-- Start Card Entrar Articulo -->
     <div class="card w-75">
         <div class="card-body">
-            <h5 class="card-title">Cliente</h5>
+            <h5 class="card-title">Nombre de Articulo</h5>
             <form class="card-text">
                 <div class="form-row">
-                    <div class="col">
-                        <input type="text" class="form-control" placeholder="Nombre">
+                    <div class="input-group mb-3">
+                        <div class="input-group-prepend">
+                            <span class="input-group-text" id="inputGroup-sizing-default">Name</span>
+                        </div>
+                        <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
                     </div>
-                    <div class="col">
-                        <input type="text" class="form-control" placeholder="Apellidos">
+                    <div class="input-group mb-3">
+                        <textarea class="form-control" id="exampleFormControlTextarea1" rows="6" placeholder="Description..."></textarea>
                     </div>
-                    <div class="col">
-                        <input type="text" class="form-control" placeholder="Telefono">
+                    <div class="input-group mb-3">
+                        <div class="input-group-prepend">
+                            <span class="input-group-text" id="inputGroup-sizing-default">Imagen Del Articulo</span>
+                        </div>
+                        <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
                     </div>
-                    <div class="col">
-                        <input type="text" class="form-control" placeholder="Email">
+                    <div class="input-group mb-3">
+                        <div class="input-group-prepend">
+                            <span class="input-group-text" id="inputGroup-sizing-default">Precio</span>
+                        </div>
+                        <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
                     </div>
                 </div>
             </form>

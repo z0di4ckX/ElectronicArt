@@ -1,6 +1,6 @@
 <!-- php connected script -->
 <?php
-    include('../include/connect.php');
+    include('include/connect.php');
     
     $query = "SELECT * FROM articulos";
     
@@ -12,7 +12,7 @@
 <head>
     <meta charset="UTF-8">
     <title>Electronic Art</title>
-    <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="css/main.css"> <!-- css style -->
     <!-- bootstrap css -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr"
@@ -22,7 +22,7 @@
 <!-- Start navigation -->
 <header>
     <div class="container p-0">
-        <nav class="navbar navbar-expand-lg">
+        <nav class="navbar navbar-expand-lg navigation_bar">
             <div class="collapse navbar-collapse">
                 <ul class="navbar-nav mr-auto">
                     <li class="nav-item active">
@@ -49,18 +49,20 @@
     </div>
 </header>
 <!-- End  -->
-    <h1>Electronic Art</h1>
-    <h3>Table</h3>
+    <h1 class="title_table">Electronic Art</h1>
+    <h3 class="title_table">Table</h3>
     <div class="row">
-        <table class="table table-strip table-hover table-bordered">
-            <tr>
-                <th>ID Articulo</th>
-                <th>Nombre</th>
-                <th>Descripcion</th>
-                <th>Imagen</th>
-                <th>Categoria</th>
-                <th>Precio</th>
-            </tr>
+        <table class="table table-strip table-hover table-bordered row_size">
+            <thead class="thead-dark">
+                <tr>
+                    <th>ID Articulo</th>
+                    <th>Nombre</th>
+                    <th>Descripcion</th>
+                    <th>Imagen</th>
+                    <th>Categoria</th>
+                    <th>Precio</th>
+                </tr>
+            </thead>
             <!-- php script -->
             <?php 
                 while($row = mysqli_fetch_assoc($result)) {
@@ -82,8 +84,8 @@
                 <td><?php echo $id_art; ?></td>
                 <td><?php echo $nombre; ?></td>
                 <td><?php echo $descripcion; ?></td>
-                <div class="card articulo_card ">
-                    <td>
+                <div class="card">
+                    <td class="image_size">
                         <img class="img-thumbnail" src="<?Php echo $imagenArt; ?>" alt="<?php echo $nombre; ?>">
                     </td>
                 </div>
