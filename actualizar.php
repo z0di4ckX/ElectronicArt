@@ -33,22 +33,23 @@ $result = $conn->query($query);
     <title>Modificar Articulo</title>
 </head>
 <body>
-    <?php if($result > 0) { ?>
+    <main>
+        <?php if($result > 0) { ?>
 
-        <h1> Articulo Modificado </h1>
-    
-    <?php header("location: index.php"); ?>
-    
-    <?php }else{?>
-    
-        <h1> Error al Modificar Articulo <h1>
-    
-    <?php } ?>
+            <h1> Articulo Modificado </h1>
+        
+        <?php header("location: index.php"); ?>
+        
+        <?php }else{?>
+        
+            <h1> Error al Modificar Articulo <h1>
+        
+        <?php } ?>
 
-    <?php mysqli_close($conn); ?>
-    
-    <a href="index.php">Regresar</a>
-
+        <?php mysqli_close($conn); ?>
+        
+        <a class="btn btn-primary" href="index.php">Regresar</a>
+    </main>
 <!-- Start bootstrap script -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
