@@ -26,19 +26,19 @@
             <div class="collapse navbar-collapse">
                 <ul class="navbar-nav mr-auto">
                     <li class="nav-item active">
-                        <a class="nav-link" href="index.html">Portada</a>
+                        <a class="nav-link" href="index.php">Portada</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="entrarArticulo.html">Entrar Articulo</a>
+                        <a class="nav-link" href="entrarArticulo.php">Entrar Articulo</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="cliente.html">Añadir Cliente</a>
+                        <a class="nav-link" href="cliente.php">Añadir Cliente</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="hacerVenta.html">Crear Venta</a>
+                        <a class="nav-link" href="hacerVenta.php">Crear Venta</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="listadoDeVenta.html">Listado de Ventas</a>
+                        <a class="nav-link" href="listadoDeVenta.php">Listado de Ventas</a>
                     </li>
                 </ul>
             </div>
@@ -106,4 +106,4 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
     <!-- End -->
 </body>
-</html>
+</htmlphp
