@@ -93,7 +93,7 @@
                 <td><?php echo $id_cat; ?></td>
                 <td><?php echo $precio; ?></td>
                 <td>
-                    <a href="ver-modificar.php?GetID=<?php echo $id_art?>" class="btn btn-success">Actualizar</a>
+                    <a href="ver-modificar.php?GetID=<?php echo $id_art;?>" class="btn btn-success">Actualizar</a>
                 </td>
                 <td>
                     <a onclick="return confirm('Estas seguro que quieres eliminar este articulo?')" href="delete.php?GetID=<?php echo $id_art;?>" class="btn btn-danger">Eliminar</a>

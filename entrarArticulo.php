@@ -1,3 +1,4 @@
+<!-- PHP script connect -->
 <?php
     include('include/connect.php');
     
@@ -5,7 +6,7 @@
     
     $result = mysqli_query($conn, $query);
 ?>
-
+<!-- End php script -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -48,10 +49,11 @@
     <h1 class="title_table">Electronic Art</h1>
     <h3 class="title_table">Entrada de Inventario</h3>
     <!-- Start Card Entrar Articulo -->
+    <main>
     <div class="card w-75">
         <div class="card-body p-10">
             <h5 class="card-title">Nombre de Articulo</h5>
-            <form class="card-text">
+            <form method="POST" action="queryEntrarArticulo.php" class="card-text">
                 <div class="form-row">
                     <div class="input-group mb-3">
                         <div class="input-group-prepend">
@@ -92,10 +94,11 @@
                 </div>
             </form>
             <br />
-            <a class="btn btn-success" href="#">Enviar</a>
+            <button type="submit" name="queryEntrarArticulo.php?GetID=<?php echo $id_art;?>" value="submit" class="btn btn-success">Enviar</button>
             <a class="btn btn-primary" href="index.html">Regresar</a>
         </div>
     </div>
+    </main>
     <!-- End -->
     <!-- bootstrap script -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>

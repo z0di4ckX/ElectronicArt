@@ -1,3 +1,4 @@
+<!-- PHP script connect -->
 <?php
     include('include/connect.php');
     
@@ -5,12 +6,13 @@
     
     $result = mysqli_query($conn, $query);
 ?>
-
+<!-- End PHP script -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <title>Electronic Art</title>
+    <link rel="stylesheet" href="css/main.css"> <!-- Css style -->
     <!-- bootstrap css -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr"
@@ -20,7 +22,7 @@
 <!-- Start navigation -->
 <header>
     <div class="container p-0">
-        <nav class="navbar navbar-expand-lg">
+        <nav class="navbar navbar-expand-lg navigation_bar">
             <div class="collapse navbar-collapse">
                 <ul class="navbar-nav mr-auto">
                     <li class="nav-item active">
@@ -44,30 +46,30 @@
     </div>
 </header>
 <!-- End -->
-    <h1>Electronic Art</h1>
-    <h3>Cliente</h3>
+    <h1 class="title_table">Electronic Art</h1>
+    <h3 class="title_table">Cliente</h3>
     <!-- Start Card Cliente-->
     <div class="card w-75">
         <div class="card-body">
             <h5 class="card-title">Cliente</h5>
-            <form class="card-text">
+            <form method="POST" action="queryCliente.php" class="card-text">
                 <div class="form-row">
                     <div class="col">
-                        <input type="text" class="form-control" placeholder="Nombre">
+                        <input type="text" class="form-control" name="Nombre" placeholder="Nombre">
                     </div>
                     <div class="col">
-                        <input type="text" class="form-control" placeholder="Apellidos">
+                        <input type="text" class="form-control" name="Apellidos" placeholder="Apellidos">
                     </div>
                     <div class="col">
-                        <input type="text" class="form-control" placeholder="Telefono">
+                        <input type="text" class="form-control" name="Tel" placeholder="Telefono">
                     </div>
                     <div class="col">
-                        <input type="text" class="form-control" placeholder="Email">
+                        <input type="text" class="form-control" name="Email" placeholder="Email">
                     </div>
                 </div>
             </form>
             <br />
-            <a class="btn btn-success" href="#">Enviar</a>
+            <button type="submit" name="queryCliente.php?GetID=<?php echo $Nombre;?>" value="submit" class="btn btn-success">Enviar</button>
             <a class="btn btn-primary" href="index.html">Regresar</a>
         </div>
     </div>
