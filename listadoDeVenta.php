@@ -11,6 +11,7 @@
 <head>
     <meta charset="UTF-8">
     <title>Electronic Art</title>
+    <link rel="stylesheet" href="css/main.css"> <!-- css style -->
     <!-- bootstrap css -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr"
@@ -20,7 +21,7 @@
 <!-- Start navigation -->
 <header>
     <div class="container p-0">
-        <nav class="navbar navbar-expand-lg">
+        <nav class="navbar navbar-expand-lg navigation_bar">
             <div class="collapse navbar-collapse">
                 <ul class="navbar-nav mr-auto">
                     <li class="nav-item active">
@@ -44,8 +45,8 @@
     </div>
 </header>
 <!-- End  -->
-    <h1>Electronic Art</h1>
-    <h3>Sign In</h3>
+    <h1 class="title_table">Electronic Art</h1>
+    <h3 class="title_table">Sign In</h3>
     <!-- Start Log-in -->
     <div class="card" style="width: 45rem;">
         <div class="card-body">
