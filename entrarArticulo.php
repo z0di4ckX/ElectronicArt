@@ -1,7 +1,7 @@
 <!-- PHP script connect -->
 <?php
     include('include/connect.php');
-    
+
     $query = "SELECT * FROM categoria";
     
     $result = mysqli_query($conn, $query);
@@ -53,13 +53,13 @@
     <div class="card w-75">
         <div class="card-body p-10">
             <h5 class="card-title">Nombre de Articulo</h5>
-            <form method="POST" action="queryEntrarArticulo.php" class="card-text">
+            <form name="modificar" method="POST" action="entrarArticulo1.php" class="card-text">
                 <div class="form-row">
                     <div class="input-group mb-3">
                         <div class="input-group-prepend">
-                            <span class="input-group-text" name="NombreArt" id="inputGroup-sizing-default">Nombre</span>
+                            <span class="input-group-text" id="inputGroup-sizing-default">Nombre</span>
                         </div>
-                        <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
+                        <input type="text" name="NombreArt" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
                     </div>
                     <div class="input-group mb-3">
                         <textarea class="form-control" id="exampleFormControlTextarea1" name="DescripcionArt" rows="6" placeholder="Description..."></textarea>
@@ -94,8 +94,8 @@
                 </div>
             </form>
             <br />
-            <button type="submit" name="queryEntrarArticulo.php?GetID=<?php echo $id_art;?>" value="submit" class="btn btn-success">Enviar</button>
-            <a class="btn btn-primary" href="index.html">Regresar</a>
+            <button type="submit" name="submit" value="submit" class="btn btn-success">Enviar</button>
+            <a class="btn btn-primary" href="index.php">Regresar</a>
         </div>
     </div>
     </main>

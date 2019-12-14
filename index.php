@@ -35,13 +35,10 @@
                         <a class="nav-link" href="cliente.php">Añadir Cliente</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="hacerVenta.php">Crear Venta</a>
+                        <a class="nav-link" href="listadoDeVenta.php">Hacer una compra</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="listadoDeVenta.php">Listado de Ventas</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="singIn.php">SingIn</a>
+                        <a class="nav-link" href="carritoDeCompra.php">Carrito de compra</a>
                     </li>
                 </ul>
             </div>

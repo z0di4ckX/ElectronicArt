@@ -2,7 +2,7 @@
 
 include('include/connect.php');
 
-$id_art = $_GET['idArt'];
+$id_art = $_GET['GetID'];
 
 $nombre = $_POST['NombreArt'];
 

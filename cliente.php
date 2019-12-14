@@ -35,10 +35,10 @@
                         <a class="nav-link" href="cliente.php">Añadir Cliente</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="hacerVenta.php">Crear Venta</a>
+                        <a class="nav-link" href="listadoDeVenta.php">Hacer una compra</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="listadoDeVenta.php">Listado de Ventas</a>
+                        <a class="nav-link" href="carritoDeCompra.php">Carrito de compra</a>
                     </li>
                 </ul>
             </div>
@@ -69,7 +69,7 @@
                 </div>
             </form>
             <br />
-            <button type="submit" name="queryCliente.php?GetID=<?php echo $Nombrephp?>" value="submit" class="btn btn-success">Enviar</button>
+            <button type="submit" name="submit" value="submit" class="btn btn-success">Enviar</button>
             <a class="btn btn-primary" href="index.html">Regresar</a>
         </div>
     </div>
