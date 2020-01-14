@@ -94,7 +94,7 @@
                 </div>
             </form>
             <br />
-            <button type="submit" name="submit" value="submit" class="btn btn-success">Enviar</button>
+            <a href="entrarArticulo1.php?GetID=<?php echo $NombreArt;?>" type="submit" name="submit" value="submit" class="btn btn-success">Enviar</a>
             <a class="btn btn-primary" href="index.php">Regresar</a>
         </div>
     </div>

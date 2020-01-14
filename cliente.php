@@ -69,7 +69,7 @@
                 </div>
             </form>
             <br />
-            <button type="submit" name="submit" value="submit" class="btn btn-success">Enviar</button>
+            <a herf="#" type="submit" name="submit" value="submit" class="btn btn-success">Enviar</a>
             <a class="btn btn-primary" href="index.html">Regresar</a>
         </div>
     </div>
